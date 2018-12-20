@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" /> <!--Propriété CSS dans un fichier indépendant nommé "style.css"-->
+    <meta charset="utf-8" />
+    <title>Exercice 6</title>
+</head>
+<body>
+    <form><!-- permet d'avoir un cadre avec des champs à remplir, <legend> correspond au titre-->
+        <fieldset style="background-color:#2574A9">
+            <legend style="background-color:#2574A9">Votre identité</legend>
+            <p></p><!--saut de ligne-->
+            1. Nom : <input type="text" size="30" placeholder="Nom"><br> <!--placeholder permet d'afficher en fond grisé un mot dans le champ à remplir-->
+            2. Prénom : <input type="text" size="30" placeholder="Prénom"><br>
+            3. Adresse mail : <input type="text" size="30" placeholder="Adresse mail"><br>
+            <p></p>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset style="background-color:#9A12B3">
+            <legend style="background-color:#9A12B3">Adresse de livraison</legend>
+            <p></p>
+            1. Adresse : <textarea rows="5"></textarea><br>
+            2. Code postal : <input type="text" size="30" placeholder="Code postal"><br>
+            3. Ville : <input type="text" size="30"<!-- augmente la longueur du champ--> placeholder="Ville"><br>
+            <p></p>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset style="background-color:#DB0A5B">
+            <legend style="background-color:#DB0A5B">Informations de réglement</legend>
+            <p></p>
+            <p>1.Type de carte de bancaire : <!--on ouvre un <p> pour créer une zone d'option (cochage de case) grace au code qui suit-->
+            <input type="radio" name="CB" value="VISA"
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
