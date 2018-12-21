@@ -6,33 +6,46 @@
     <title>Exercice 6</title>
 </head>
 <body>
-    <form><!-- permet d'avoir un cadre avec des champs à remplir, <legend> correspond au titre-->
-        <fieldset style="background-color:#2574A9">
-            <legend style="background-color:#2574A9">Votre identité</legend>
+    <form>
+        <!-- permet d'avoir un cadre avec des champs à remplir, <legend> correspond au titre-->
+        <fieldset class="id">
+            <legend class="id">Votre identité</legend>
             <p></p><!--saut de ligne-->
-            1. Nom : <input type="text" size="30" placeholder="Nom"><br> <!--placeholder permet d'afficher en fond grisé un mot dans le champ à remplir-->
-            2. Prénom : <input type="text" size="30" placeholder="Prénom"><br>
-            3. Adresse mail : <input type="text" size="30" placeholder="Adresse mail"><br>
+            <ol>
+                <li>Nom : <input type="text" size="30" placeholder="Nom"></li> <!--placeholder permet d'afficher en fond grisé un mot dans le champ à remplir-->
+                <li>Prénom : <input type="text" size="30" placeholder="Prénom"></li>
+                <li>Adresse mail : <input type="text" size="30" placeholder="Adresse mail"></li>
+            </ol>
             <p></p>
         </fieldset>
     </form>
     <form>
-        <fieldset style="background-color:#9A12B3">
-            <legend style="background-color:#9A12B3">Adresse de livraison</legend>
+        <fieldset class="location">
+            <legend class="location">Adresse de livraison</legend>
             <p></p>
-            1. Adresse : <textarea rows="5"></textarea><br>
-            2. Code postal : <input type="text" size="30" placeholder="Code postal"><br>
-            3. Ville : <input type="text" size="30"<!-- augmente la longueur du champ--> placeholder="Ville"><br>
+            <ol>
+                <li>Adresse : <textarea rows="5"></textarea></li>
+                <li>Code postal : <input type="text" size="30" placeholder="Code postal"></li>
+                <li>Ville : <input type="text" size="30" placeholder="Ville"></li> <!--Size="30" augmente la longueur de champ-->
+                
+            </ol>
             <p></p>
         </fieldset>
     </form>
     <form>
-        <fieldset style="background-color:#DB0A5B">
+        <fieldset class="pay">
             <legend style="background-color:#DB0A5B">Informations de réglement</legend>
             <p></p>
-            <p>1.Type de carte de bancaire : <!--on ouvre un <p> pour créer une zone d'option (cochage de case) grace au code qui suit-->
-            <input type="radio" name="CB" value="VISA"
-            </p>
+            <p>
+                <ol>
+                    <li>
+                        Type de carte de bancaire :</br>
+                        <!--on ouvre un <p> pour créer une zone d'option (cochage de case) grace au code qui suit-->
+                        <input type="radio" name="CB" value="VISA" id="VISA" /><label for="VISA">VISA</label><br />
+                        <input type="radio" name="CB" value="Mastercard" id="Mastercard" /><label for="Mastercard">Mastercard</label>
+                    </li>
+                    <li>Numéro de carte : <input type="text" size="30" placeholder="Numéro de carte"></li>
+                </ol>
         </fieldset>
     </form>
 </body>
