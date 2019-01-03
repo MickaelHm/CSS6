@@ -1,18 +1,15 @@
 ﻿.id {
-    background-color: #2574A9
-}
-.id{
+    background-color: #2574A9;
     font-weight: bold;
 }
 .location {
-    font-weight: bold
-}
-.location {
-    background-color: #9A12B3
+    font-weight: bold;
+    background-color: #9A12B3;
 }
 .pay {
-    background-color: #DB0A5B
+    background-color: #DB0A5B;
+    font-weight: bold;
 }
-.pay {
-    font-weight: bold
+ul {
+    list-style-type: none;
 }

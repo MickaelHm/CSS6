@@ -6,50 +6,76 @@
     <title>Exercice 6</title>
 </head>
 <body>
-    <form>
-        <!-- permet d'avoir un cadre avec des champs à remplir, <legend> correspond au titre-->
+    <form action="#" method="post">
         <fieldset class="id">
+            <!-- permet d'avoir un cadre avec des champs à remplir, <legend> correspond au titre-->
             <legend class="id">Votre identité</legend>
-            <p></p><!--saut de ligne-->
             <ol>
-                <li>Nom : <input type="text" size="30" placeholder="Nom"></li> <!--placeholder permet d'afficher en fond grisé un mot dans le champ à remplir-->
-                <li>Prénom : <input type="text" size="30" placeholder="Prénom"></li>
-                <li>Adresse mail : <input type="text" size="30" placeholder="Adresse mail"></li>
+                <li>
+                    <label for="lastName">Nom : </label>
+                    <input type="text" name="lastName" id="lastName" size="30" placeholder="Nom">
+                </li> <!--placeholder permet d'afficher en fond grisé un mot dans le champ à remplir-->
+                <li>
+                    <label for="firstName">Prénom : </label>
+                    <input type="text" name="firstName" id="firstName" size="30" placeholder="Prénom">
+                </li>
+                <li>
+                    <label for="email">Adresse mail : </label>
+                    <input type="text" name="email" id="email" size="30" placeholder="Adresse mail">
+                </li>
             </ol>
             <p></p>
         </fieldset>
-    </form>
-    <form>
         <fieldset class="location">
             <legend class="location">Adresse de livraison</legend>
-            <p></p>
             <ol>
-                <li>Adresse : <textarea rows="5"></textarea></li>
-                <li>Code postal : <input type="text" size="30" placeholder="Code postal"></li>
-                <li>Ville : <input type="text" size="30" placeholder="Ville"></li> <!--Size="30" augmente la longueur de champ-->
-                
+                <li>
+                    <label for="address">Adresse : </label>
+                    <textarea name="address" id="address" rows="5"></textarea><!--ne pas mettre d'espace entre les 2 balises avant textearea!-->
+                </li>
+                <li>
+                    <label for="postalCode">Code postal : </label>
+                    <input type="text" name="postalCode" id="postalCode" size="30" placeholder="Code postal">
+                </li>
+                <li>
+                    <label for="city">Ville : </label>
+                    <input type="text" name="city" id="city" size="30" placeholder="Ville"> <!--Size="30" augmente la longueur de champ-->
+                </li>
+
             </ol>
-            <p></p>
         </fieldset>
-    </form>
-    <form>
         <fieldset class="pay">
-            <legend style="background-color:#DB0A5B">Informations de réglement</legend>
-            <p></p>
-            <p>
-                <ol>
-                    <li>
-                        Type de carte de bancaire :</br>
-                        <!--on ouvre un <p> pour créer une zone d'option (cochage de case) grace au code qui suit-->
-                        <input type="radio" name="CB" value="VISA" id="VISA" /><label for="VISA">VISA</label><br />
-                        <input type="radio" name="CB" value="Mastercard" id="Mastercard" /><label for="Mastercard">Mastercard</label>
-                    </li>
-                    <li>Numéro de carte : <input type="text" size="30" placeholder="Numéro de carte"></li>
-                    <li>Code de sécurité : <input type="text" size="30" placeholder="Code de sécurité"></li>
-                    <li>Nom du titulaire : <input type="text" size="30" placeholder="Nom du titulaire"></li>
-                </ol>
+            <legend class="pay">Informations de réglement</legend>
+            <ol>
+                <li>
+                    <label>Type de carte de bancaire : </label>
+                    <ul>
+                        <li>
+                            <input type="radio" name="card" value="VISA" id="VISA" />
+                            <label for="VISA">VISA</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="card" value="Mastercard" id="Mastercard" />
+                            <label for="Mastercard">Mastercard</label>
+                        </li>
+                    </ul>
+                <li>
+                    <label for="numberCard">Numéro de carte : </label>
+                    <input type="text" name="numberCard" id="numberCard" size="30" placeholder="Numéro de carte">
+                </li>
+                <li>
+                    <label for="security">Code de sécurité :</label>
+                    <input type="text" name="security" id="security" size="30" placeholder="Code de sécurité">
+                </li>
+                <li>
+                    <label for="holder">Nom du titulaire :</label>
+                    <input type="text" size="30" placeholder="Nom du titulaire">
+                </li>
+            </ol>
         </fieldset>
         <input type="submit" name="Buy" value="J'achète !" id="J'achète !" />
+        <!--input type="button"-->
+        <!--<button type="submit> </button>"-->
     </form>
 </body>
 </html>
